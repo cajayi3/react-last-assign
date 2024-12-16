@@ -1,0 +1,38 @@
+.concept {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 1px solid white;
+    border-radius: 5px;
+    position: relative;
+    left: 650px;
+    width: 580px;
+}
+
+.about{
+    text-align: center;
+    text-decoration: solid;
+    color: white;
+    position: relative;
+    left: 120px;
+    text-shadow: 3px 3px red;
+}
+
+.protect{
+    padding-top: 10px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 1px red;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    position: relative;
+    top: 60px;
+}
+
+.spider{
+    height: 850px;
+    width: 1850px;
+    background-size: cover;
+    position: relative;
+    bottom: 65px;
+    right: 285px;
+};

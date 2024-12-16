@@ -1,0 +1,52 @@
+.dooms{
+    height: 900px;
+    position: relative;
+    background-size: cover;
+    width: 1855px;
+    right: 285px;
+    bottom: 55px;
+}
+
+.greeting{
+    color: white;
+    font-family: cursive;
+    text-shadow: 3px 3px red;
+
+}
+
+.view{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 3px 3px red;
+}
+
+.home-page{
+    position: relative;
+    left: 100px;
+    top: 300px;
+}
+
+.meet{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+}
+
+.explore{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    position: relative;
+    right: 120px;
+    font-weight: bold;
+}
+
+.nav-dash{
+    background-color: black;
+    color: orange;
+    border-style: dotted;
+    border-color: orange;
+    border: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    right: 120px;
+}

@@ -1,0 +1,131 @@
+.squad{
+    position: relative;
+    height: 900px;
+    background-size: cover;
+}
+
+.Name{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px red;
+}
+
+.Weight{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px red;
+}
+
+.Strength{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px red;
+}
+
+.Vision{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px red;
+}
+
+.Weakness{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px red;
+}
+
+.Height{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px red;
+}
+
+.Origin{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px red;
+}
+
+.Ability{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px red;
+}
+
+.name{
+    border-radius: 5px;
+    color: white;
+    border: dashed;
+    border-color: black;
+    position: relative;
+}
+
+.weight{
+    border-radius: 5px;
+    color: white;
+    border: dashed;
+    border-color: black;
+    position: relative;
+}
+
+.strength{
+    border-radius: 5px;
+    color: white;
+    border: dashed;
+    border-color: black;
+    position: relative;
+}
+
+.origin{
+    border-radius: 5px;
+    color: white;
+    border: dashed;
+    border-color: black;
+    position: relative;
+}
+
+.vision{
+    border-radius: 5px;
+    color: white;
+    border: dashed;
+    border-color: black;
+    position: relative;
+}
+
+.ability{
+    border-radius: 5px;
+    color: white;
+    border: dashed;
+    border-color: black;
+    position: relative;
+}
+
+.height{
+    border-radius: 5px;
+    color: white;
+    border: dashed;
+    border-color: black;
+    position: relative;
+}
+
+.weakness{
+    border-radius: 5px;
+    color: white;
+    border: dashed;
+    border-color: black;
+    position: relative;    
+}
+
+.back {
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+    padding: 10px;
+}
+
+.submitCar{
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+    padding: 10px;
+}
