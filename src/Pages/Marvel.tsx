@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form"
 import  Button from "../../src/components/Button";
-import React from "react";
+import React, { useEffect } from "react";
 import '../../src/css/marvel.css'
 import { server_calls } from "../api/server";
 import  Background  from '../assets/images/squad.jpg'
@@ -16,15 +16,16 @@ import {
   chooseOrigin 
 } from "../../src/Redux/slices/RootSlice";
 
-interface FormData {
-  name: string;
-  height: string;
-  weight: string;
-  strength: string;
-  vision: string;
-  weakness: string;
-  ability: string;
-  origin: string;
+export interface HeroFormData {
+  name?: string;
+  height?: string;
+  weight?: string;
+  strength?: string;
+  vision?: string;
+  weakness?: string;
+  ability?: string;
+  origin?: string;
+  [key: string]: any;
 }
 
 export interface IFormInputProps {
@@ -34,16 +35,25 @@ export interface IFormInputProps {
 
 
 const FormInput: React.FC<IFormInputProps> = ({id, onBackBtnClickHnd }) => {
-  const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
+  const { register, handleSubmit, formState: { errors }, reset } = useForm<HeroFormData>();
   const dispatch = useDispatch();
   const store = useStore();
 
-  const onSubmit = async (data: FormData) => {
+  useEffect(() => {
+    if (id && id.length > 0) {
+      const fetchData = async () => {
+        const data = await server_calls.get(id[0]);
+        reset(data);
+      };
+      fetchData();
+    }
+  }, [id, reset]);
+
+  const onSubmit = async (data: HeroFormData) => {
     console.log("Submitting form data:", data);
-    console.log(`ID: ${typeof id}`);
 
     try {
-    if ( id && id.length > 0) {
+      if ( id && id.length > 0) {
         await server_calls.update(id[0], data);
         console.log(`Updated: ${data.name} ${id[0]}`);
       } else {
@@ -56,13 +66,12 @@ const FormInput: React.FC<IFormInputProps> = ({id, onBackBtnClickHnd }) => {
         dispatch(chooseAbility(data.ability));
         dispatch(chooseOrigin(data.origin));
 
-        await server_calls.create(store.getState())
+        await server_calls.create(store.getState());
         console.log("Created new entry:", data);
         }
       } catch (error) {
-        console.log('Error during submission:', error);
+        console.log("Error during submission:", error);
       }
-
     };
 
   return (

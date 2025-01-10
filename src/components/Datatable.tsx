@@ -339,7 +339,7 @@ const processRowUpdate = (newRow: GridRowModel) => {
                 <DataGrid
                 rows={rows} 
                 columns={columns} 
-                pageSizeOptions={[7]}
+                pageSizeOptions={[5]}
                 editMode='row'
                 rowModesModel={rowModesModel}
                 onRowModesModelChange={handleRowModesModelChange}
