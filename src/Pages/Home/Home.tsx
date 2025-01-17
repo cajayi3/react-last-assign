@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../Home/Home.css';
 import { useAuth0 } from '@auth0/auth0-react';
 
+
 const Home = () => {
     const { user, isAuthenticated } = useAuth0();
 

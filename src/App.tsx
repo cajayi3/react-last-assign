@@ -6,6 +6,7 @@ import Dashboard from '../src/Pages/Dashboard/Dashboard';
 import { Auth0Provider } from '@auth0/auth0-react';
 
 
+
 const App: React.FC = () => {
     return (
       <Auth0Provider

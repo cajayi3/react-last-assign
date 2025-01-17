@@ -1,16 +1,18 @@
 .dooms{
-    height: 900px;
     position: relative;
-    background-size: cover;
-    width: 1855px;
+    height: 100vh;
+    width: 1850px;
+    overflow: hidden;
     right: 285px;
-    bottom: 55px;
+    bottom: 30px;
 }
 
 .greeting{
     color: white;
     font-family: cursive;
     text-shadow: 3px 3px red;
+    font-size: 24px;
+    font-weight: bold;
 
 }
 
@@ -22,22 +24,47 @@
 
 .home-page{
     position: relative;
-    left: 100px;
-    top: 300px;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    margin-top: 20%;
 }
 
 .meet{
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: larger;
+
 }
 
 .explore{
     font-family: 'Times New Roman', Times, serif;
     color: black;
     position: relative;
-    right: 120px;
+    right:20px;
     font-weight: bold;
+
+}
+
+.welcome{
+    text-align: center;
+    margin-top: 20%;
+}
+
+.background-image{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+}
+
+.spider{
+    position: relative;
+    bottom: 30px;
+    right: 300px;
+    width: 1850px;
 }
 
 .nav-dash{
@@ -48,5 +75,8 @@
     border: 5px;
     font-family: 'Times New Roman', Times, serif;
     position: relative;
-    right: 120px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    right: 0px;
 }

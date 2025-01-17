@@ -4,8 +4,12 @@
     border: 1px solid white;
     border-radius: 5px;
     position: relative;
-    left: 650px;
+    left: 5px;
+    bottom: 140px;
     width: 580px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
 .about{
@@ -13,7 +17,7 @@
     text-decoration: solid;
     color: white;
     position: relative;
-    left: 120px;
+    bottom: 220px;
     text-shadow: 3px 3px red;
 }
 
@@ -25,14 +29,30 @@
     text-decoration-line: underline;
     text-decoration-style: dashed;
     position: relative;
-    top: 60px;
+    top: 20px;
 }
 
 .spider{
-    height: 850px;
-    width: 1850px;
-    background-size: cover;
     position: relative;
-    bottom: 65px;
-    right: 285px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    background-color: black;
+    overflow: hidden;
 };
+
+.backgroundimg2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.5);
+}

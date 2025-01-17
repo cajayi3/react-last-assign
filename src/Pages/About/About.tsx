@@ -1,6 +1,7 @@
 import Background from '../../assets/images/spider.jpg'
 import '../About/About.css'
 
+
 function About() {
   return (
     <div className='spider' style={{ backgroundImage: `url(${ Background })`}} >
